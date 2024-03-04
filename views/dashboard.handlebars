@@ -1,0 +1,12 @@
+<section>
+    <h2>Your Dashboard</h2>
+
+    {{#if posts.length}}
+    <div class="card">
+        {{#each posts as |post|}}
+        {{> post-details post}}
+        {{/each}}
+    </div>
+    {{/if}}
+    
+</section>
