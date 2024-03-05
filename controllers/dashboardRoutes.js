@@ -21,4 +21,12 @@ router.get('/', withAuth, async (req, res) => {
     }
 });
 
+// GET new post page
+router.get('/new', withAuth, (req, res) => {
+    console.log("going to make a new post lol");
+    res.render('new-post', {
+        loggedIn: req.session.loggedIn
+    });
+});
+
 module.exports = router;
