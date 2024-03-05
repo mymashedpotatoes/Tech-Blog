@@ -1,3 +1,4 @@
+//add comment form
 async function commentFormHandler(event) {
     event.preventDefault();
 
@@ -30,4 +31,5 @@ async function commentFormHandler(event) {
     }
 }
 
+//event listener for comment form handler
 document.querySelector('.comment-form').addEventListener('submit', commentFormHandler);
